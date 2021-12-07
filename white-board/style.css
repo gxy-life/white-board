@@ -8,19 +8,23 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: gray;
   margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
 }
 .waku {
   position: relative;
   width: 90%;
-  min-height: 210px;
-  background: rgb(248, 248, 248);
+  min-height: 250px;
+  background: #fff;
   border-top: 8px solid #333;
   border-right: 8px solid #333;
   border-left: 8px solid #333;
   border-radius: 10px 10px 0 0;
   padding: 20px 40px;
   padding-bottom: 5%;
+  overflow: hidden;
 }
 ol {
   counter-reset: number-ol;
@@ -29,14 +33,17 @@ li {
   position: relative;
   width: 95%;
   list-style: none;
+  font-weight: bold;
   color: #333;
   margin-bottom: 1em;
+  font-size: 1.5em;
+  text-indent: 1em;
 }
 ol li::before {
   counter-increment: number-ol;
   content: counter(number-ol);
   position: absolute;
-  top: 1px;
+  top: 0px;
   left: -25px;
   background: #ff0000;
   font-size: 14px;
@@ -196,12 +203,13 @@ ol li::before {
 @media (max-width: 480px) {
   .whiteBoard{
     margin: 20px 5px;
+    padding: 10px 0;
   }
   .waku {
     padding: 10px 20px 10px 30px;
   }
   li {
-    font-size: 12px;
+    font-size: 14px;
   }
   .mag-blue,
   .mag-yellow,
